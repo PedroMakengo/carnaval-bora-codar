@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --gray-100: #f8f8ff;
+
+  --danger: #e45858;
+}
+
+:focus {
+  outline: none;
+}
+
+body,
+button,
+textarea,
+input,
+label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
