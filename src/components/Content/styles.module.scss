@@ -1,44 +1,110 @@
 .container {
   width: 76rem;
   margin: 6.25rem auto;
-}
 
-.titleAndTab {
-  display: flex;
-  justify-content: space-between;
-
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 140%;
-    color: #121214;
-  }
-
-  .tab {
+  .titleAndTab {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 
-    button {
-      width: 5.37rem;
-      height: 2rem;
-
-      border: 0;
-      border-radius: 5px;
-      background: none;
-
-      color: #6246ea;
-      text-transform: uppercase;
+    h2 {
+      font-size: 2rem;
       font-weight: 700;
+      font-style: normal;
+      line-height: 140%;
+      color: #121214;
+    }
 
-      padding: 4px 24px;
+    .tab {
       display: flex;
-      justify-content: center;
       align-items: center;
 
-      &.active {
-        background: #6246ea;
-        color: white;
+      button {
+        width: 5.37rem;
+        height: 2rem;
+
+        border: 0;
+        border-radius: 5px;
+        background: none;
+
+        color: #6246ea;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        padding: 4px 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.active {
+          background: #6246ea;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.listArticleCarnaval {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  margin-top: 2.5rem;
+  margin-bottom: 6.25rem;
+
+  .itemCarnaval {
+    width: 23.5rem;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+
+    img {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      width: 100%;
+    }
+
+    .content {
+      h3 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #121214;
+      }
+      padding: 1rem;
+
+      p {
+        padding: 1rem 0;
+        font-size: 1rem;
+        line-height: 160%;
+      }
+
+      span {
+        display: flex;
+        gap: 8px;
+        color: rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 80%;
+    padding: 1rem;
+
+    margin: 2.5rem auto;
+
+    .titleAndTab {
+      flex-direction: column;
+      gap: 1.5rem;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .tab {
+        button {
+          width: 50%;
+        }
       }
     }
   }
