@@ -7,8 +7,8 @@
 .hero::after {
   content: '';
   position: absolute;
-  width: 407px;
-  height: 345px;
+  width: 25.4rem;
+  height: 21.5rem;
 
   background: url(../../assets/ilustra01.svg);
 
@@ -99,5 +99,58 @@
     width: 90%;
     border: 0;
     background: var(--gray-100);
+  }
+}
+
+.buttonSubmit {
+  background: #6246ea;
+  border: 0;
+  border-radius: 5px;
+  padding: 12px 8px 12px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  svg {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero::after {
+    width: 16rem;
+    height: 15rem;
+
+    background-position: center;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .container {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .header {
+    margin-top: 2rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    width: 20.4rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    width: 100%;
+
+    margin-top: 2rem;
   }
 }

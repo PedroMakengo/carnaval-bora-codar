@@ -26,7 +26,10 @@ export function Hero() {
               className={styles.down}
             />
           </div>
-          <button>Buscar agora</button>
+          <button type="submit" className={styles.buttonSubmit}>
+            <span>Buscar agora</span>
+            <MagnifyingGlass size={24} color="#fff" weight="thin" />
+          </button>
         </form>
       </div>
     </section>
