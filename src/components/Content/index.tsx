@@ -93,13 +93,14 @@ export function Content() {
           <div className={styles.itemCarnaval} key={index}>
             <img src={item.img} alt="" />
             <div className={styles.content}>
-              <h3>O Python do vovô não sobe mais</h3>
+              <h3>{item.title}</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint.
               </p>
               <span>
-                <MapPin color="#E45858" /> São Paulo SP
+                <MapPin color="#E45858" />
+                {item.city}
               </span>
             </div>
           </div>
