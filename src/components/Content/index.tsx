@@ -11,6 +11,7 @@ import image06 from '../../assets/image/06-image.svg'
 import image07 from '../../assets/image/07-image.svg'
 import image08 from '../../assets/image/08-image.svg'
 import image09 from '../../assets/image/09-image.svg'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const listCarnaval = [
   {
