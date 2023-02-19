@@ -11,14 +11,18 @@ export function Hero() {
             Encontre os <span>melhores blocos</span> de carnaval de 2023
           </h1>
         </header>
-        <form action="" className={styles.form}>
+        <form className={styles.form}>
           <div className={styles.fieldInput}>
             <MagnifyingGlass size={24} color="#e45858" weight="thin" />
             <input type="text" placeholder="Pesquise por nome" />
           </div>
           <div className={styles.fieldInput}>
             <MapPin size={24} color="#e45858" weight="thin" />
-            <input type="text" placeholder="Selecione uma cidade" />
+            <input
+              type="text"
+              placeholder="Selecione uma cidade"
+              list="task-cidades"
+            />
             <CaretDown
               size={24}
               color="#858793"
@@ -26,6 +30,13 @@ export function Hero() {
               className={styles.down}
             />
           </div>
+          <datalist id="task-cidades">
+            <option value="Luanda" />
+            <option value="Benguela" />
+            <option value="Malange" />
+            <option value="Uíge" />
+            <option value="Cabinda" />
+          </datalist>
           <button type="submit" className={styles.buttonSubmit}>
             <span>Buscar agora</span>
             <MagnifyingGlass size={24} color="#fff" weight="thin" />
