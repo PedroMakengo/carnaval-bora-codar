@@ -1,9 +1,20 @@
+import useWindowSize from 'react-use/lib/useWindowSize'
+import Confetti from 'react-confetti'
+
 import { MagnifyingGlass, MapPin, CaretDown } from 'phosphor-react'
 import styles from './styles.module.scss'
 
 export function Hero() {
+  const { width, height } = useWindowSize()
   return (
     <section className={styles.hero}>
+      <Confetti
+        width={width}
+        height={height}
+        tweenDuration={1000}
+        numberOfPieces={400}
+        recycle={false}
+      />
       <div className={styles.container}>
         <header className={styles.header}>
           <span>Find your block</span>
